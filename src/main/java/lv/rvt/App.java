@@ -1,23 +1,22 @@
 package lv.rvt;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
+import java.util.Scanner;
 
-import javax.sound.midi.SysexMessage;
-
-    public class App
+public class App
     {
     public static void main( String[] args )
-    {
-        // My code starts here
+        {
+            Scanner scanner = new Scanner(System.in);
 
-        String name = "Eduards";
-        int age = 16;
-        boolean isOnline = false;
+            System.out.println("Ievadi savu vārdu: ");
+            String name = scanner.nextLine();
 
-        System.out.println(age);
+            System.out.println("Ievadi savu uzvārdu: ");
+            String surname = scanner.nextLine();
 
-        // Code ends
+            System.out.println("Ievadi savas grupas nosaukumu: ");
+            String group = scanner.nextLine();
+
+            System.out.println("Students: " + name + " " + surname + ", grupa: " + group);
+        }
     }
-
-}
