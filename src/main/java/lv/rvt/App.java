@@ -7,6 +7,7 @@ public class App
 {
     public static void main( String[] args )
     {
+        // Scanner
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Ievadi gift tax: ");
@@ -24,8 +25,8 @@ public class App
          System.out.println("Tax: " + (22100 + (giftTax-200000)* 0.15));
         } else {
          System.out.println("Tax: " + (142100 + (giftTax-1000000)* 0.17));
-}
-}
+        }   
+    }
 }
 
 
