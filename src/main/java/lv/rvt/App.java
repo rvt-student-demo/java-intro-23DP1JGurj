@@ -5,19 +5,17 @@ import java.util.Scanner;
 public class App
 {
     public static void main(String[] args) {
-        printStars(5);
-        printStars(3);
-        printStars(9);
+        printSquare(4);
     }
 
-    public static void printStars(int number) {
-       int st = 0;
-       while (st < number) {
-        System.out.print("*");
-        st++;
+    public static void printSquare(int size) {
+     for (int st = 0; size > st; st++) {
+        for(int a = 0; size > a; a++) {
+            System.out.print("*");
        }
        System.out.println();
     }
+}
 }
 
 
