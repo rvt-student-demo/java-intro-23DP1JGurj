@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class App
 {
     public static void main(String[] args) {
-        printSquare(4);
+        printRectangle(17, 3);
     }
 
-    public static void printSquare(int size) {
-     for (int st = 0; size > st; st++) {
-        for(int a = 0; size > a; a++) {
+    public static void printRectangle(int width, int height) {
+     for (int st = 0; height > st; st++) {
+        for(int a = 0; width > a; a++) {
             System.out.print("*");
        }
        System.out.println();
