@@ -105,6 +105,7 @@ public class App
 
     // 3
     public static void christmasTree (int height) {
+        System.out.println();
         int d = 1;
         for (int e = 0; e < height; e++) {
             printSpaces(height-(e+1));
