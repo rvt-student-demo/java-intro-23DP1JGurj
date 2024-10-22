@@ -3,25 +3,34 @@ package lv.rvt;
 import java.util.*;
 
 public class App
-        {
-        public static void main(String[] args) {
 
-            Scanner scanner = new Scanner(System.in);
-            ArrayList<Integer> intList = new ArrayList<>();
+{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        List<Integer> numbers = new ArrayList<>();
 
-            while (true) {
-                int input = Integer.valueOf(scanner.nextLine());
-                intList.add(input);
-                if (input == 0) {
-                    break;
-                }
+
+        System.out.println("Enter numbers (enter -1 to stop):");
+        while (true) {
+            int input = scanner.nextInt();
+            if (input == -1) {
+            break;
             }
-
-            int sum = 0;
-            for (int i = 0; i < intList.size(); i++) {
-                sum += intList.get(i);
-            }
-            System.out.println(sum);
-
+            numbers.add(input);
         }
+
+
+        System.out.println("From where? ");
+        int startIndex = scanner.nextInt();
+        System.out.println("To where? ");
+        int endIndex = scanner.nextInt();
+
+
+        System.out.println("Numbers in the range:");
+        for (int i = startIndex; i <= endIndex; i++) {
+            System.out.println(numbers.get(i));
+            }
+
+        scanner.close();
     }
+}
