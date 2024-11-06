@@ -2,17 +2,17 @@ package lv.rvt;
 
 import java.util.*;
 
-public class App
-{
+public class App {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        DecreasingCounter counter = new DecreasingCounter(10);
 
-        Person pers1 = new Person("John");
+        counter.printValue();
 
-        pers1.printPerson();
-        for (int i = 0; i < 30; i++) {
-            pers1.growOlder();
-        }
-        pers1.printPerson();
+        counter.decrement();
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
+
     }
 }
