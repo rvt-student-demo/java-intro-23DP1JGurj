@@ -4,14 +4,12 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) {
-        DecreasingCounter counter = new DecreasingCounter(100);
+        Agent bond = new Agent("James", "Bond");
+        bond.toString();
+        System.out.println(bond);
 
-        counter.printValue();
-
-        counter.reset();
-        counter.printValue();
-
-        counter.decrement();
-        counter.printValue();
+        Agent ionic = new Agent("Ionic","Bond");
+        ionic.toString();
+        System.out.println(ionic);
     }
 }
