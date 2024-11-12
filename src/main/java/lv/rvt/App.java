@@ -1,12 +1,16 @@
 package lv.rvt;
 
+import java.io.BufferedReader;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) {
-        PaymentCard card = new PaymentCard(10);
-        System.out.println("Paul: " + card);
-        card.addMoney(-15);
-        System.out.println("Paul: " + card);
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = Utils.getReader("data.csv");
+        String line;
+
+        while ((line = reader.readLine()) != null) {
+            System.out.println(line);
+
+        }
     }
 }
