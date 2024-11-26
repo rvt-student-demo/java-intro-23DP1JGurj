@@ -1,10 +1,10 @@
 package lv.rvt;
 
 public class DecreasingCounter {
-    private int value; // a variable that remembers the value of the counter
+    private int value;   // a variable that remembers the value of the counter
 
     public DecreasingCounter(int initialValue) {
-    this.value = initialValue;
+        this.value = initialValue;
     }
 
     public void reset() {
@@ -38,8 +38,8 @@ public class DecreasingCounter {
     }
 
     public void decrease(int decreaseBy) {
-       if (decreaseBy > 0) {
-        this.value -= decreaseBy;
+        if (decreaseBy > 0) {
+            this.value -= decreaseBy;
         }
     }
 }
