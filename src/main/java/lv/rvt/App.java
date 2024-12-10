@@ -19,10 +19,15 @@ public class App {
             if (userCommand.equals("show")) {
                 System.out.println("Show all persons: ");
                 ArrayList<Person> persons = PersonManager.getPersonList();
-            
-                for (Person person: persons) {
-                    System.out.println(person);
+                System.out.println("----------------------------------------------------");
+                System.out.println("|  Name  | Age | Weight | Height | Body mass index |");
+                System.out.println("----------------------------------------------------");
+                for (Person person1: persons) {
+                    System.out.printf("| %-7s| %-6d| %-7d| %-7d| %-16.2f|", person1.getName(), person1.getAge(), person1.getWeight(), person1.getHeight(), person1.bodyMassIndex());
+                    System.out.println();
                 }
+                System.out.println("----------------------------------------------------");
+            
             } else if (userCommand.equals("add")) {
                 System.out.println("Enter your name: ");
                 String name = scanner.nextLine();
