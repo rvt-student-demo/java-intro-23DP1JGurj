@@ -25,7 +25,9 @@ public class PaymentTerminal {
     }
 
     public double eatHeartily(double payment) {
-
+        // a hearty meal costs 4.30 euros
+        // increase the amount of cash by the price of a hearty meal and return the change
+        // if the payment parameter is not large enough, no meal is sold and the method should return the whole payment
         heartyMeals += 1;
         double heartyMeal = 4.30;
         if (payment >= heartyMeal) {
@@ -55,6 +57,14 @@ public class PaymentTerminal {
         }
         return false;
     }
+
+    public void addMoneyToCard(PaymentCard card, double sum) {
+        if (sum > 0) {
+            card.addMoney(sum); 
+            this.money += sum;  
+        }
+    }
+
 
     @Override
     public String toString() {
