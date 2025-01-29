@@ -92,4 +92,7 @@ public class Person {
     public int getWeight() {
         return this.weight;
     }
+    public String getAddress() {
+        return this.address;
+    }
 }

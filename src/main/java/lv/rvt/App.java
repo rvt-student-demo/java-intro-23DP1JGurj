@@ -11,12 +11,9 @@ import lv.rvt.connecticut.Box;
 public class App { 
     public static void main ( String[] args )
     {
-        Person person1 = new Person("John", "Riga");
-        Student student1 = new Student("Jack", "Salaspils");
-        Teacher teacher1 = new Teacher("Kraken", "Italy");
-
-        System.out.println(
-            teacher1.toString()
-            );
+        Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90018");
+        System.out.println(ollie);
+        ollie.study();
+        System.out.println(ollie);
     }
 }

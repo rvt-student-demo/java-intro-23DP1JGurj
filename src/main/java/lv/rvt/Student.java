@@ -1,4 +1,3 @@
-
 package lv.rvt;
 
 public class Student extends Person{
@@ -20,7 +19,7 @@ public class Student extends Person{
 
     @Override
     public String toString(){
-        return "Student: " + super.getName();
+        return super.getName() + "\n\t" + super.getAddress() + "\n\tStudy credits " + this.credits;
     }
 
     @Override
