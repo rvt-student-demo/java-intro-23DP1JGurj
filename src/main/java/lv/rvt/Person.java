@@ -8,14 +8,16 @@ public class Person {
     private int weight; 
     private int height;
     private String address;
-    
+    private int salary;
+
     // All args constructor
-    public Person(String name, int age, int weight, int height, String address) { 
+    public Person(String name, int age, int weight, int height, String address, int salary) { 
         this.name = name; 
         this.age = age; 
         this.weight = weight; 
         this.height = height; 
         this.address = address;
+        this.salary = salary;
     } 
     
     // Second constructor with only one parameter
@@ -36,7 +38,11 @@ public class Person {
 
 
     public Person(String name, String address){
-        this(name, 0, 0, 0, address);
+        this(name, 0, 0, 0, address, 0);
+    }
+
+    public Person(String name, String address, int salary) {
+        this(name, 0, 0, 0, address, salary);
     }
 
     public void growOlder() {
@@ -94,5 +100,8 @@ public class Person {
     }
     public String getAddress() {
         return this.address;
+    }
+    public int getSalary() {
+        return this.salary;
     }
 }

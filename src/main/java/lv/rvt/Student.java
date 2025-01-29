@@ -2,9 +2,7 @@ package lv.rvt;
 
 public class Student extends Person{
     private int credits;
-    private String name;
-    private String address;
-
+    
     public Student(String name, String address){
         super(name, address);
     }
